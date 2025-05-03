@@ -39,7 +39,7 @@ Performance is evaluated using:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/pneumonia-detection.git
+   git clone https://github.com/Srinidhi2274/pneumonia-detection.git
    cd pneumonia-detection
    ```
 
