@@ -19,6 +19,25 @@ This project leverages **transfer learning** using the following models pre-trai
 
 Transfer learning allows the model to benefit from previously learned visual features, improving performance even with a smaller dataset.
 
+## 🧪 Data Preprocessing
+
+1. **Image Resizing:**
+   - All chest X-ray images are resized to 256x256 pixels to match the input shape required by CNN models.
+
+2. **Normalization:**
+   - Pixel intensity values are scaled from the range [0, 255] to [0, 1] to ensure faster convergence during training.
+
+3. **Data Augmentation:**
+   - Applied random transformations such as horizontal flipping, zooming, and shearing using `ImageDataGenerator` to:
+     - Reduce overfitting
+     - Improve generalization
+
+4. **Splitting:**
+   - Used `validation_split` within the image generator or separate folders for training and validation data to monitor performance during training.
+
+5. **Label Preparation:**
+   - Images are categorized into two folders: `NORMAL` and `PNEUMONIA`, and labels are automatically inferred.
+
 ## 📊 Model Evaluation
 
 Performance is evaluated using:
